@@ -5,12 +5,13 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.taskexample_section32concurrencyinjava.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ListView?>
+<GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.taskexample_section32concurrencyinjava.HelloController">
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+    <Label fx:id="welcomeText"/>
+    <Button text="Get Employee Names" onAction="#buttonPressed" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <ListView GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="listView"/>
+
+</GridPane>
