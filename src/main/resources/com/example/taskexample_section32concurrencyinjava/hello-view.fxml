@@ -7,11 +7,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
 <GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.example.taskexample_section32concurrencyinjava.HelloController">
 
     <Label fx:id="welcomeText"/>
     <Button text="Get Employee Names" onAction="#buttonPressed" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
     <ListView GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="listView"/>
-
+    <ProgressBar fx:id="progressBar" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Label fx:id="progressLabel" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
 </GridPane>
